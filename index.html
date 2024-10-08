@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.E.B. Motors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">J.E.B. Motors</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#vehicles">Vehicles</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Electric. Autonomous.</h1>
+            <button onclick="scrollToSection('vehicles')">Explore Our Vehicles</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Our Story</h2>
+        <p>J.E.B. Motors was founded by John Balci, a visionary who transformed his high school "LSV" passion project into a company, with the goal of continuing what he worked on as well as advancing the foundations he had already built.</p>
+        <button onclick="scrollToSection('vehicles')">Learn More About John</button>
+    </section>
+
+    <section id="vehicles" class="vehicles">
+        <h2>Our Cars</h2>
+        <div class="vehicle-list">
+            <div class="vehicle">
+                <img src="vehicle1.png" alt="first-view">
+                <img src="vehicle2.png" alt="second-view">
+                <h3>Autonomous LSV</h3>
+                <p>The Autonomous LSV is a fully-electric vehicle aiming to achieve a low-speed delegation, such that it may be federally regulated to drive on highways where the speed limit does not exceed 35 mph.</p>
+                <p>The goal of this project is to demonstrate an understanding of the design process, prepare for bigger steps, and to create a cheaper car for those who are uninterested in traversing the dangerous American highway.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="john" class="john"></section>
+    <div class = "john">
+        <h2>John Balci</h2>
+        <img src="john.png" alt="John Balci" style="width: 500px; height: auto;">
+        <p>John Balci is the founder and CEO of J.E.B. Motors.</p>
+        <p>A high school student at TJHSST, he plans to continue his strives in innovation past the bounds of high school, through graduation.</p>
+        <p>A kid with a background in both engineering and the arts, he has begun to fuse both of his interests, covering the design as well as the internal mechanisms of the vehicles he creates.</p>
+    </div>
+
+    <section id="technology" class="technology">
+        <h2>Ideology</h2>
+        <p>J.E.B. Motors integrates sensor-driven technology, electric powertrains, and sustainability into vehicles to create an end-product that is not only useful to the consumer, but beneficial to the environment and safety of others.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 J.E.B. Motors. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
